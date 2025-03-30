@@ -37,9 +37,15 @@ function App() {
       </header>
 
       {/* Hero Section */}
-      <div className="relative h-[500px] bg-cover bg-center" style={{
-        backgroundImage: 'url("https://images.unsplash.com/photo-1506377247377-2a5b3b417ebb?ixlib=rb-1.2.1&auto=format&fit=crop&w=2000&q=80")'
-      }}>
+      <div className="relative h-[500px] overflow-hidden">
+        <video
+          autoPlay
+          muted
+          loop
+          playsInline
+          className="absolute inset-0 w-full h-full object-cover"
+          src="https://i.imgur.com/mWHrJ3K.mp4"
+        />
         <div className="absolute inset-0 bg-black bg-opacity-50" />
         <div className="relative container mx-auto px-4 h-full flex items-center">
           <div className="text-white max-w-2xl">
